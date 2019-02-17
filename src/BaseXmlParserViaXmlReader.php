@@ -1,6 +1,7 @@
 <?php
 
-namespace xmlToArray;
+namespace xml\xmlToArray;
+
 /**
  * Class BaseXmlParser
  */

@@ -1,5 +1,5 @@
 <?php
-namespace xmlToArray;
+namespace xml\xmlToArray;
 class XmlParser extends BaseXmlParserViaXmlReader
 {
 
