@@ -3,10 +3,15 @@
 namespace xml\xmlToArray;
 
 /**
- * Class BaseXmlParser
+ * Class BaseXmlParserViaXmlReader
+ * @package xml\xmlToArray
  */
 abstract class BaseXmlParserViaXmlReader extends BaseXmlParser
 {
+	/**
+	 * @param string $fileName
+	 * @return array
+	 */
 	public function xmlFileToAssociativeArray(string $fileName): array
 	{
 		$xml = new \XMLReader;
@@ -18,5 +23,9 @@ abstract class BaseXmlParserViaXmlReader extends BaseXmlParser
 			return [];
 	}
 
+	/**
+	 * @param \XMLReader $xml
+	 * @return mixed
+	 */
 	abstract protected function xmlReaderToAssoc(\XMLReader $xml);
 }

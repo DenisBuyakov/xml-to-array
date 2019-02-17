@@ -1,8 +1,15 @@
 <?php
 namespace xml\xmlToArray;
+/**
+ * Class XmlParser
+ * @package xml\xmlToArray
+ */
 class XmlParser extends BaseXmlParserViaXmlReader
 {
-
+	/**
+	 * @param \XMLReader $xml
+	 * @return mixed|null|string
+	 */
 	protected function xmlReaderToAssoc(\XMLReader $xml) {
 		$tree = null;
 		while ($xml->read()) {
