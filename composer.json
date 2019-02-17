@@ -2,9 +2,7 @@
   "name": "denis-buyakov/xml-to-array",
   "description": "A short description of what your package does",
   "autoload" : {
-	"psr-4" : {
-	  "denis-buyakov\\xml-to-array\\" : "src/"
-	}
+	"classmap": ["src/"]
   },
   "require": {
 	"php": "^7.1"
