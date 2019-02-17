@@ -1,6 +1,6 @@
 <?php
 
-namespace xml;
+namespace denisBuyakov\xmlToArray;
 /**
  * Class BaseXmlParser
  */
